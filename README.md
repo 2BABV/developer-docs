@@ -20,19 +20,6 @@ The Aspire Dashboard opens in your browser automatically. From there, click the 
 
 ---
 
-## Local development — Python (direct)
-
-**Prerequisites:** Python 3.9+
-
-```bash
-pip install -r requirements.txt
-mkdocs serve
-```
-
-Open <http://localhost:8000>. Edits are reflected immediately with live reload.
-
----
-
 ## Adding or editing content
 
 All documentation lives in the `docs/` folder as Markdown files. The site navigation is defined in `mkdocs.yml` under the `nav:` key.
