@@ -36,4 +36,4 @@ All responses return JSON. Successful responses use `2xx` status codes. Errors f
 
 <!-- Add endpoint pages here as the API grows -->
 !!! info "Documentation in progress"
-    Endpoint reference pages are being added. Check back soon or contact [developer@2ba.nl](mailto:developer@2ba.nl).
+    [helpdesk@2ba.nl](mailto:helpdesk@2ba.nl)

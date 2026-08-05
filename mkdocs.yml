@@ -67,14 +67,6 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Getting Started:
-    - Overview: getting-started/index.md
-    - Authentication: getting-started/authentication.md
-    - Rate Limiting: getting-started/rate-limiting.md
-  - API Reference:
-    - Overview: api/index.md
-  - Integrations:
-    - Overview: integrations/index.md
 
 extra:
   social:

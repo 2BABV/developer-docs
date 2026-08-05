@@ -2,36 +2,51 @@
 
 Welcome to the official developer documentation for **2BA**. Here you'll find everything you need to integrate with our APIs and leverage our integration capabilities.
 
-## What's available
+## APIs & Specifications
 
 <div class="grid cards" markdown>
 
--   :material-rocket-launch:{ .lg .middle } **Getting Started**
+-   :material-api:{ .lg .middle } **Product Data OpenAPI**
 
     ---
 
-    New to 2BA integrations? Start here to set up authentication and make your first API call.
+    REST API specifications based on the ETIM xChange datamodel — product data, trade items, designed for programmatic consumption.
 
-    [:octicons-arrow-right-24: Get started](getting-started/index.md)
+    [:octicons-arrow-right-24: Explore the OpenAPI](https://product-data-openapi.2ba.nl/){ target=_blank }
 
--   :material-api:{ .lg .middle } **API Reference**
-
-    ---
-
-    Full reference documentation for all available API endpoints, parameters, and response formats.
-
-    [:octicons-arrow-right-24: Explore the API](api/index.md)
-
--   :material-connection:{ .lg .middle } **Integrations**
+-   :material-code-braces:{ .lg .middle } **2BA WCF API**
 
     ---
 
-    Guides and examples for integrating 2BA data into your ERP, e-commerce platform, or custom system.
+    WCF-based web services (SOAP and JSON) for accessing 2BA product data, classifications, and trade item information.
 
-    [:octicons-arrow-right-24: View integrations](integrations/index.md)
+    [:octicons-arrow-right-24: API documentation](https://api.2ba.nl/1/docs/index.html?url=/1/docs/swagger.json){ target=_blank }  
+    [:octicons-arrow-right-24: General documentation](https://www.2ba.nl/documentatie/webservices/introduction-webservices/){ target=_blank }
+
+-   :material-leaf:{ .lg .middle } **Environmental Data API**
+
+    ---
+
+    2BA's implementation of the Ketenstandaard API Specs for environmental data (Milieudata).
+
+    [:octicons-arrow-right-24: Explore the API](https://environmental.api.2ba.nl/scalar/v1){ target=_blank }
+
+</div>
+
+## Integrations & Platforms
+
+<div class="grid cards" markdown>
+
+-   :material-swap-horizontal:{ .lg .middle } **Unifeed**
+
+    ---
+
+    Unifeed is 2BA's platform for standardised product data exchange. Integrate your ERP or e-commerce system with Unifeed to sync product information automatically.
+
+    [:octicons-arrow-right-24: Unifeed documentation](https://www.2ba.nl/documentatie/unifeed/introductie/){ target=_blank }
 
 </div>
 
 ## Need help?
 
-Contact us at [developer@2ba.nl](mailto:developer@2ba.nl) or open an issue on [GitHub](https://github.com/2BABV/developer-docs/issues).
+Contact us at [helpdesk@2ba.nl](mailto:helpdesk@2ba.nl), visit our [contact page](https://www.2ba.nl/contact/){ target=_blank }, or open an issue on [GitHub](https://github.com/2BABV/developer-docs/issues).

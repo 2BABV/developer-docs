@@ -20,4 +20,4 @@ Select an integration method from the navigation to get started.
 
 <!-- Add integration guide pages as they are written -->
 !!! info "Documentation in progress"
-    Integration guides are being added. Contact [developer@2ba.nl](mailto:developer@2ba.nl) for assistance in the meantime.
+    Integration guides are being added. Contact [helpdesk@2ba.nl](mailto:helpdesk@2ba.nl) for assistance in the meantime.

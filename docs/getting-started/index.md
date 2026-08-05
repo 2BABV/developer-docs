@@ -9,7 +9,7 @@ Before you begin, you need:
 - A 2BA developer account
 - API credentials (client ID and client secret)
 
-Contact [developer@2ba.nl](mailto:developer@2ba.nl) to request access.
+Contact [helpdesk@2ba.nl](mailto:helpdesk@2ba.nl) to request access.
 
 ## Base URL
 
