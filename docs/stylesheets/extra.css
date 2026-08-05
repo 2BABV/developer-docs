@@ -28,12 +28,12 @@ body,
 
 /* Header uses primary fg/bg */
 .md-header {
-  background-color: #004B71;
-  color: #EDE8D8;
+  background-color: rgb(237, 232, 216);
+  color: #004B71;
 }
 
 .md-header__title {
-  color: #EDE8D8;
+  color: #004B71;
 }
 
 /* Navigation tabs */
@@ -65,6 +65,17 @@ body,
 .md-button--primary:hover {
   background-color: #008f68;
   border-color: #008f68;
+}
+
+/* Grid cards */
+.grid.cards .card,
+.md-typeset .grid.cards > ul > li {
+  background-color: rgb(249, 247, 241);
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+  background-color: rgb(249, 247, 241);
 }
 
 /* Search bar */
