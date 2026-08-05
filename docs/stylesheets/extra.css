@@ -1,0 +1,77 @@
+/* 2BA brand colors */
+:root,
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #004B71;
+  --md-primary-fg-color--light: #1a6a8f;
+  --md-primary-fg-color--dark:  #003352;
+  --md-primary-bg-color:        #EDE8D8;
+  --md-primary-bg-color--light: rgba(237, 232, 216, 0.7);
+  --md-accent-fg-color:              #00A87A;
+  --md-accent-fg-color--transparent: rgba(0, 168, 122, 0.1);
+  --md-default-bg-color:        #EDE8D8;
+  --md-default-bg-color--light: rgba(237, 232, 216, 0.54);
+  --md-default-bg-color--lighter: rgba(237, 232, 216, 0.26);
+  --md-default-bg-color--lightest: rgba(237, 232, 216, 0.07);
+  --md-default-fg-color:        #004B71;
+  --md-default-fg-color--light: rgba(0, 75, 113, 0.75);
+  --md-default-fg-color--lighter: rgba(0, 75, 113, 0.54);
+  --md-default-fg-color--lightest: rgba(0, 75, 113, 0.12);
+  --md-typeset-a-color:         #00A87A;
+  --md-code-bg-color:           rgba(0, 75, 113, 0.06);
+}
+
+/* Brand font */
+body,
+.md-typeset {
+  font-family: AllRoundGothic, Nunito, "Trebuchet MS", sans-serif;
+}
+
+/* Header uses primary fg/bg */
+.md-header {
+  background-color: #004B71;
+  color: #EDE8D8;
+}
+
+.md-header__title {
+  color: #EDE8D8;
+}
+
+/* Navigation tabs */
+.md-tabs {
+  background-color: #004B71;
+}
+
+.md-tabs__link {
+  color: rgba(237, 232, 216, 0.8);
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: #EDE8D8;
+}
+
+/* Sidebar active link */
+.md-nav__link--active {
+  color: #00A87A;
+}
+
+/* Buttons */
+.md-button--primary {
+  background-color: #00A87A;
+  border-color: #00A87A;
+  color: #EDE8D8;
+}
+
+.md-button--primary:hover {
+  background-color: #008f68;
+  border-color: #008f68;
+}
+
+/* Search bar */
+.md-search__input {
+  background-color: rgba(237, 232, 216, 0.15);
+}
+
+.md-search__input::placeholder {
+  color: rgba(237, 232, 216, 0.6);
+}
