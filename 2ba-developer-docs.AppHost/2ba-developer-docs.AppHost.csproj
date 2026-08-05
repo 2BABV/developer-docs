@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="13.*" />
+    <!-- Platform-specific DCP and Dashboard — add the matching pair for your OS -->
+    <PackageReference Include="Aspire.Hosting.Orchestration.win-x64"  Version="13.*" Condition="$([MSBuild]::IsOSPlatform('Windows'))" />
+    <PackageReference Include="Aspire.Hosting.Orchestration.linux-x64" Version="13.*" Condition="$([MSBuild]::IsOSPlatform('Linux'))" />
+    <PackageReference Include="Aspire.Hosting.Orchestration.osx-arm64" Version="13.*" Condition="$([MSBuild]::IsOSPlatform('OSX'))" />
+    <PackageReference Include="Aspire.Dashboard.Sdk.win-x64"           Version="13.*" Condition="$([MSBuild]::IsOSPlatform('Windows'))" />
+    <PackageReference Include="Aspire.Dashboard.Sdk.linux-x64"         Version="13.*" Condition="$([MSBuild]::IsOSPlatform('Linux'))" />
+    <PackageReference Include="Aspire.Dashboard.Sdk.osx-arm64"         Version="13.*" Condition="$([MSBuild]::IsOSPlatform('OSX'))" />
+  </ItemGroup>
+
+</Project>

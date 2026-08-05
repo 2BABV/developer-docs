@@ -1,0 +1,7 @@
+site/
+.cache/
+__pycache__/
+*.py[cod]
+.env
+.venv
+2ba-developer-docs.AppHost/

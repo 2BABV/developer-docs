@@ -1,0 +1,22 @@
+# MkDocs
+site/
+.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+.venv
+
+# .NET
+bin/
+obj/
+*.user
+
+# Visual Studio
+.vs/
+*.slnx.user
+
+# NuGet
+*.nupkg
+packages/
