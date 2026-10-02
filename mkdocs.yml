@@ -67,6 +67,15 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - OAuth2 / Identity:
+    - Introduction: oauth2/index.md
+    - Resource Owner Password Credentials Grant: oauth2/oauth2-resource-owner-password-credentials-grant.md
+    - Authorization Code: oauth2/oauth2-authorization-code.md
+    - Refresh Access Token: oauth2/oauth2-refresh-access-token.md
+  - 2BA WCF API:
+    - Introduction: api/wcf-introduction.md
+    - Error Codes: api/wcf-error-codes.md
+    - Example - JSON Service Request: api/wcf-example-json-request.md
 
 extra:
   social:

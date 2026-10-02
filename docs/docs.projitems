@@ -7,5 +7,12 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)**\*" />
+    <None Include="$(MSBuildThisFileDirectory)api\wcf-error-codes.md" />
+    <None Include="$(MSBuildThisFileDirectory)api\wcf-example-json-request.md" />
+    <None Include="$(MSBuildThisFileDirectory)api\wcf-introduction.md" />
+    <None Include="$(MSBuildThisFileDirectory)oauth2\index.md" />
+    <None Include="$(MSBuildThisFileDirectory)oauth2\oauth2-authorization-code.md" />
+    <None Include="$(MSBuildThisFileDirectory)oauth2\oauth2-refresh-access-token.md" />
+    <None Include="$(MSBuildThisFileDirectory)oauth2\oauth2-resource-owner-password-credentials-grant.md" />
   </ItemGroup>
 </Project>
