@@ -1,65 +1,86 @@
-/* 2BA brand colors */
+/* 2BA brand colors (Huisstijlgids) */
 :root,
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color:        #004B71;
-  --md-primary-fg-color--light: #1a6a8f;
+  --md-primary-fg-color:        #004B73; /* 2BA-Blauw */
+  --md-primary-fg-color--light: #1a6a90;
   --md-primary-fg-color--dark:  #003352;
-  --md-primary-bg-color:        #EDE8D8;
-  --md-primary-bg-color--light: rgba(237, 232, 216, 0.7);
-  --md-accent-fg-color:              #00A87A;
-  --md-accent-fg-color--transparent: rgba(0, 168, 122, 0.1);
-  --md-default-bg-color:        #EDE8D8;
-  --md-default-bg-color--light: rgba(237, 232, 216, 0.54);
-  --md-default-bg-color--lighter: rgba(237, 232, 216, 0.26);
-  --md-default-bg-color--lightest: rgba(237, 232, 216, 0.07);
-  --md-default-fg-color:        #004B71;
-  --md-default-fg-color--light: rgba(0, 75, 113, 0.75);
-  --md-default-fg-color--lighter: rgba(0, 75, 113, 0.54);
-  --md-default-fg-color--lightest: rgba(0, 75, 113, 0.12);
-  --md-typeset-a-color:         #00A87A;
-  --md-code-bg-color:           rgba(0, 75, 113, 0.06);
+  --md-primary-bg-color:        #EDE7D7; /* 2BA-Ivoor licht */
+  --md-primary-bg-color--light: rgba(237, 231, 215, 0.7);
+  --md-accent-fg-color:              #00A97A; /* 2BA-Groen */
+  --md-accent-fg-color--transparent: rgba(0, 169, 122, 0.1);
+  --md-default-bg-color:        #EDE7D7;
+  --md-default-bg-color--light: rgba(237, 231, 215, 0.54);
+  --md-default-bg-color--lighter: rgba(237, 231, 215, 0.26);
+  --md-default-bg-color--lightest: rgba(237, 231, 215, 0.07);
+  --md-default-fg-color:        #004B73;
+  --md-default-fg-color--light: rgba(0, 75, 115, 0.75);
+  --md-default-fg-color--lighter: rgba(0, 75, 115, 0.54);
+  --md-default-fg-color--lightest: rgba(0, 75, 115, 0.12);
+  --md-typeset-a-color:         #00A97A;
+  --md-code-bg-color:           rgba(0, 75, 115, 0.06);
+
+  /* 2BA supplementary color palette (Aanvullend kleurenpalet) — for accents, graphs, etc. */
+  --color-2ba-rood:             #E06478;
+  --color-2ba-ivoor-donker:     #DBD7C8;
+  --color-2ba-licht-blauw:      #B3C3C4;
+  --color-2ba-zacht-lila:       #B9B3CE;
+  --color-2ba-warm-geel:        #E5C875;
+  --color-2ba-zacht-oranje:     #D99A72;
 }
 
-/* Brand font */
+/* Brand fonts */
 body,
 .md-typeset {
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Headings & accents use All Round Gothic */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6,
+.md-header__title,
+.md-nav__title,
+.md-tabs__link {
   font-family: AllRoundGothic, Nunito, "Trebuchet MS", sans-serif;
 }
 
 /* Header uses primary fg/bg */
 .md-header {
-  background-color: rgb(237, 232, 216);
-  color: #004B71;
+  background-color: #EDE7D7;
+  color: #004B73;
 }
 
 .md-header__title {
-  color: #004B71;
+  color: #004B73;
 }
 
 /* Navigation tabs */
 .md-tabs {
-  background-color: #004B71;
+  background-color: #004B73;
 }
 
 .md-tabs__link {
-  color: rgba(237, 232, 216, 0.8);
+  color: rgba(237, 231, 215, 0.8);
 }
 
 .md-tabs__link--active,
 .md-tabs__link:hover {
-  color: #EDE8D8;
+  color: #EDE7D7;
 }
 
 /* Sidebar active link */
 .md-nav__link--active {
-  color: #00A87A;
+  color: #00A97A;
 }
 
 /* Buttons */
 .md-button--primary {
-  background-color: #00A87A;
-  border-color: #00A87A;
-  color: #EDE8D8;
+  background-color: #00A97A;
+  border-color: #00A97A;
+  color: #EDE7D7;
 }
 
 .md-button--primary:hover {
@@ -71,6 +92,64 @@ body,
 .grid.cards .card,
 .md-typeset .grid.cards > ul > li {
   background-color: rgb(249, 247, 241);
+}
+
+/* Condensed layout — fit more content on screen */
+.md-typeset {
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.md-typeset h1 {
+  font-size: 1.6em;
+  margin: 0 0 0.6em;
+}
+
+.md-typeset h2 {
+  font-size: 1.25em;
+  margin: 1em 0 0.5em;
+}
+
+.md-typeset h3 {
+  font-size: 1.1em;
+  margin: 0.9em 0 0.4em;
+}
+
+.md-typeset h4 {
+  margin: 0.8em 0 0.4em;
+}
+
+.md-typeset p,
+.md-typeset ul,
+.md-typeset ol,
+.md-typeset dl {
+  margin: 0.4em 0;
+}
+
+.md-typeset li {
+  margin-bottom: 0.2em;
+}
+
+.md-content__inner {
+  margin: 0.6em 0 1em;
+  padding-top: 0.4em;
+}
+
+.md-nav {
+  font-size: 0.65rem;
+}
+
+.md-nav__item {
+  padding: 0;
+}
+
+.md-nav__link {
+  margin-top: 0.2em;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: 0.4em 0.7em;
 }
 
 /* Tables */
