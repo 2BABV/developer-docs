@@ -45,6 +45,7 @@ body,
 .md-nav__title,
 .md-tabs__link {
   font-family: AllRoundGothic, Nunito, "Trebuchet MS", sans-serif;
+  font-weight: 700;
 }
 
 /* Header uses primary fg/bg */
@@ -101,21 +102,28 @@ body,
 }
 
 .md-typeset h1 {
-  font-size: 1.6em;
+  font-size: 18pt;
+  font-weight: 700;
   margin: 0 0 0.6em;
 }
 
 .md-typeset h2 {
-  font-size: 1.25em;
+  font-size: 16pt;
+  font-weight: 700;
   margin: 1em 0 0.5em;
 }
 
 .md-typeset h3 {
-  font-size: 1.1em;
+  font-size: 16pt;
+  font-weight: 700;
   margin: 0.9em 0 0.4em;
 }
 
-.md-typeset h4 {
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-size: 16pt;
+  font-weight: 700;
   margin: 0.8em 0 0.4em;
 }
 
