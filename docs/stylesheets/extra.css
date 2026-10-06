@@ -1,27 +1,32 @@
 /* 2BA brand colors (Huisstijlgids) */
 :root,
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color:        #004B73; /* 2BA-Blauw */
-  --md-primary-fg-color--light: #1a6a90;
-  --md-primary-fg-color--dark:  #003352;
-  --md-primary-bg-color:        #EDE7D7; /* 2BA-Ivoor licht */
-  --md-primary-bg-color--light: rgba(237, 231, 215, 0.7);
-  --md-accent-fg-color:              #00A97A; /* 2BA-Groen */
-  --md-accent-fg-color--transparent: rgba(0, 169, 122, 0.1);
-  --md-default-bg-color:        #EDE7D7;
-  --md-default-bg-color--light: rgba(237, 231, 215, 0.54);
-  --md-default-bg-color--lighter: rgba(237, 231, 215, 0.26);
-  --md-default-bg-color--lightest: rgba(237, 231, 215, 0.07);
-  --md-default-fg-color:        #004B73;
-  --md-default-fg-color--light: rgba(0, 75, 115, 0.75);
-  --md-default-fg-color--lighter: rgba(0, 75, 115, 0.54);
-  --md-default-fg-color--lightest: rgba(0, 75, 115, 0.12);
-  --md-typeset-a-color:         #00A97A;
-  --md-code-bg-color:           rgba(0, 75, 115, 0.06);
+  --md-primary-fg-color:        var(--color-2ba-blauw);
+  --md-primary-fg-color--light: var(--color-2ba-blauw);
+  --md-primary-fg-color--dark:  var(--color-2ba-blauw);
+  --md-primary-bg-color:        var(--color-2ba-ivoor-licht);
+  --md-primary-bg-color--light: var(--color-2ba-ivoor-donker);
+  --md-accent-fg-color:              var(--color-2ba-groen);
+  --md-accent-fg-color--transparent: var(--color-2ba-warm-geel);
+  --md-default-bg-color:        var(--color-2ba-ivoor-licht);
+  --md-default-bg-color--light: var(--color-2ba-ivoor-licht);
+  --md-default-bg-color--lighter: var(--color-2ba-ivoor-donker);
+  --md-default-bg-color--lightest: var(--color-2ba-ivoor-donker);
+  --md-default-fg-color:        var(--color-2ba-blauw);
+  --md-default-fg-color--light: var(--color-2ba-blauw);
+  --md-default-fg-color--lighter: var(--color-2ba-blauw);
+  --md-default-fg-color--lightest: var(--color-2ba-ivoor-donker);
+  --md-typeset-a-color:         var(--color-2ba-groen);
+  --md-code-bg-color:           var(--color-2ba-ivoor-donker);
 
-  /* 2BA supplementary color palette (Aanvullend kleurenpalet) — for accents, graphs, etc. */
-  --color-2ba-rood:             #E06478;
-  --color-2ba-ivoor-donker:     #DBD7C8;
+  /* 2BA primary brand colors */
+  --color-2ba-blauw:             #004B73;
+  --color-2ba-groen:             #00A97A;
+  --color-2ba-rood:              #E06478;
+  --color-2ba-ivoor-donker:      #DBD7C8;
+  --color-2ba-ivoor-licht:       #EDE7D7;
+
+  /* 2BA supplementary color palette — for accents, graphs, etc. */
   --color-2ba-licht-blauw:      #B3C3C4;
   --color-2ba-zacht-lila:       #B9B3CE;
   --color-2ba-warm-geel:        #E5C875;
@@ -50,49 +55,81 @@ body,
 
 /* Header uses primary fg/bg */
 .md-header {
-  background-color: #EDE7D7;
-  color: #004B73;
+  background-color: var(--color-2ba-ivoor-licht);
+  color: var(--color-2ba-blauw);
 }
 
 .md-header__title {
-  color: #004B73;
+  color: var(--color-2ba-blauw);
+}
+
+/* Enlarge header logo */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2.2rem;
+  width: auto;
 }
 
 /* Navigation tabs */
 .md-tabs {
-  background-color: #004B73;
+  background-color: var(--color-2ba-blauw);
 }
 
 .md-tabs__link {
-  color: rgba(237, 231, 215, 0.8);
+  color: var(--color-2ba-licht-blauw);
 }
 
 .md-tabs__link--active,
 .md-tabs__link:hover {
-  color: #EDE7D7;
+  color: var(--color-2ba-ivoor-licht);
+}
+
+.md-tabs__link--active,
+.md-tabs__link[aria-current="page"],
+.md-tabs__item--active .md-tabs__link {
+  position: relative;
+  color: var(--color-2ba-ivoor-licht);
+  z-index: 0;
+}
+
+.md-tabs__link--active::before,
+.md-tabs__link[aria-current="page"]::before,
+.md-tabs__item--active .md-tabs__link::before {
+  content: "";
+  position: absolute;
+  inset: -0.5em -1em;
+  background-color: var(--color-2ba-rood);
+  border-radius: 999px;
+  z-index: -1;
 }
 
 /* Sidebar active link */
 .md-nav__link--active {
-  color: #00A97A;
+  color: var(--color-2ba-groen);
+}
+
+/* Heading permalink icons */
+.md-typeset .headerlink,
+.md-typeset a.headerlink {
+  color: var(--color-2ba-rood) !important;
 }
 
 /* Buttons */
 .md-button--primary {
-  background-color: #00A97A;
-  border-color: #00A97A;
-  color: #EDE7D7;
+  background-color: var(--color-2ba-groen);
+  border-color: var(--color-2ba-groen);
+  color: var(--color-2ba-ivoor-licht);
 }
 
 .md-button--primary:hover {
-  background-color: #008f68;
-  border-color: #008f68;
+  background-color: var(--color-2ba-blauw);
+  border-color: var(--color-2ba-blauw);
 }
 
 /* Grid cards */
 .grid.cards .card,
 .md-typeset .grid.cards > ul > li {
-  background-color: rgb(249, 247, 241);
+  background-color: var(--color-2ba-ivoor-donker);
 }
 
 /* Condensed layout — fit more content on screen */
@@ -162,14 +199,85 @@ body,
 
 /* Tables */
 .md-typeset table:not([class]) {
-  background-color: rgb(249, 247, 241);
+  background-color: var(--color-2ba-ivoor-donker);
+}
+
+/* Admonitions — recolor 'note' to brand zacht lila accent instead of Material's default blue */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: var(--color-2ba-zacht-lila);
+}
+
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: var(--color-2ba-ivoor-licht);
+}
+
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before {
+  background-color: var(--color-2ba-zacht-lila);
+}
+
+/* Admonitions — recolor 'info' to brand light blue accent instead of Material's default blue */
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-color: var(--color-2ba-licht-blauw);
+}
+
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary {
+  background-color: var(--color-2ba-ivoor-licht);
+}
+
+.md-typeset .info > .admonition-title::before,
+.md-typeset .info > summary::before {
+  background-color: var(--color-2ba-licht-blauw);
 }
 
 /* Search bar */
 .md-search__input {
-  background-color: rgba(237, 232, 216, 0.15);
+  background-color: var(--color-2ba-ivoor-donker);
 }
 
 .md-search__input::placeholder {
-  color: rgba(237, 232, 216, 0.6);
+  color: var(--color-2ba-licht-blauw);
+}
+
+/* Footer — use dark ivory for a calm, on-brand closing of the page */
+.md-footer {
+  background-color: var(--color-2ba-ivoor-donker);
+}
+
+.md-footer-meta {
+  background-color: var(--color-2ba-ivoor-donker);
+}
+
+.md-footer,
+.md-footer-meta,
+.md-footer__link {
+  color: var(--color-2ba-blauw);
+}
+
+.md-footer__link:hover,
+.md-footer__link:focus {
+  color: var(--color-2ba-groen);
+}
+
+/* Footer copyright/social row */
+.md-footer-meta,
+.md-footer-meta.md-typeset,
+.md-copyright,
+.md-copyright__highlight,
+.md-social__link svg {
+  color: var(--color-2ba-blauw);
+  fill: var(--color-2ba-blauw);
+}
+
+.md-social__link:hover svg {
+  fill: var(--color-2ba-groen);
+}
+
+/* Footer prev/next navigation arrows */
+.md-footer__button svg {
+  fill: var(--color-2ba-rood);
 }
