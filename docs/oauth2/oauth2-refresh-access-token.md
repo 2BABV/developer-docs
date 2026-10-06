@@ -1,6 +1,6 @@
 # OAuth2 — Refresh Access Token
 
-To refresh an access token, the `OAuth/Token` service can be used, as described in the API documentation. In addition to the access token, this service also returns a new refresh token.
+To refresh an access token, the `connect/token` service can be used, as described in the API documentation. In addition to the access token, this service also returns a new refresh token.
 
 The refresh token does not have infinite validity, so it is wise to replace the old refresh token with the new one as soon as possible. Should the refresh token expire, the service will return a bad-request (HTTP status code 400) error, and the user will have to log in again.
 
@@ -20,7 +20,7 @@ private void BtnRefreshAccesTokenClick(object sender, EventArgs e)
 {
     try
     {
-        var httpWReq = (HttpWebRequest)WebRequest.Create(GlobalVariables.AuthorizeServer + "/OAuth/Token");
+        var httpWReq = (HttpWebRequest)WebRequest.Create(GlobalVariables.AuthorizeServer + "/connect/token");
         var encoding = new ASCIIEncoding();
         var postData = "grant_type=refresh_token";
         postData += "&refresh_token=" + txtRefreshToken.Text;

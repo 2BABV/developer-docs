@@ -43,7 +43,7 @@ This process takes the following steps:
     }
     ```
 
-4. The token service (`OAuth/Token`) is then invoked with a `grant_type` of `authorization_code` and the `code` parameter set to the authorization code retrieved earlier:
+4. The token service (`connect/token`) is then invoked with a `grant_type` of `authorization_code` and the `code` parameter set to the authorization code retrieved earlier:
 
     ```csharp
     public static OAuthTokenResponse GetAccessToken(string authorizationCode)
@@ -54,7 +54,7 @@ This process takes the following steps:
         postData += "&client_id=" + Globals.ClientId;
         postData += "&client_secret=" + Globals.ClientSecret;
 
-        // POST postData to {AuthorizeServer}/OAuth/Token and parse the
+        // POST postData to {AuthorizeServer}/connect/token and parse the
         // access_token / refresh_token / expires_in fields from the JSON response.
     }
     ```

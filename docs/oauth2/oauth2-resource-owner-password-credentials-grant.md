@@ -9,7 +9,7 @@ With the Access Token, 2BA services can be invoked. Based on the Access Token, 2
 
 ## Required data
 
-To use the `OAuth/Token` service, the following data is required:
+To use the `connect/token` service, the following data is required:
 
 | Field | Description |
 |---|---|
@@ -29,7 +29,7 @@ private void BtnLoginClick(object sender, System.EventArgs e)
 {
     try
     {
-        var httpWReq = (HttpWebRequest)WebRequest.Create(GlobalVariables.AuthorizeServer + "/OAuth/Token");
+        var httpWReq = (HttpWebRequest)WebRequest.Create(GlobalVariables.AuthorizeServer + "/connect/token");
         var encoding = new ASCIIEncoding();
         string postData = "grant_type=password";
         postData += "&username=" + txtUsername.Text;

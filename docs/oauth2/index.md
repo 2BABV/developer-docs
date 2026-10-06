@@ -39,7 +39,7 @@ See [Authorization Code](oauth2-authorization-code.md) for details and example c
 
 | Parameter | Value |
 |---|---|
-| Authorization URL | `https://authorize.2ba.nl/OAuth/Token` |
+| Authorization URL | `https://authorize.2ba.nl/connect/token` (the legacy `OAuth/Token` endpoint is also still supported) |
 | client_id / client_secret | As received from 2BA |
 
 ## Examples
